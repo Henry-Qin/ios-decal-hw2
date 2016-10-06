@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     // TODO: This looks like a good place to add some data structures.
     //       One data structure is initialized below for reference.
-    var someDataStructure: [String] = [""]
+    var someDataStructure: [String] = []
     
 
     override func viewDidLoad() {
@@ -46,51 +46,178 @@ class ViewController: UIViewController {
     // TODO: A method to update your data structure(s) would be nice.
     //       Modify this one or create your own.
     func updateSomeDataStructure(_ content: String) {
-        print("Update me like one of those PCs")
+        if (content == "=") {
+            if (someDataStructure[1] == "/" && Int(someDataStructure[0])! % Int(someDataStructure[2])! != 0) {
+                let value = doubleCalculate(a: someDataStructure[0], b: someDataStructure[2], operation: "/")
+                updateResultLabel(String(value))
+                someDataStructure.removeAll()
+                someDataStructure.append(String(value))
+            } else {
+                if (Int(someDataStructure[0]) == nil || Int(someDataStructure[2]) == nil ) {
+                    let value = doubleCalculate(a: someDataStructure[0], b: someDataStructure[2], operation: someDataStructure[1])
+                    updateResultLabel(String(value))
+                    someDataStructure.removeAll()
+                    someDataStructure.append(String(value))
+                } else {
+                    let value = calculate()
+                    updateResultLabel(value)
+                    someDataStructure.removeAll()
+                    someDataStructure.append(value)
+                }
+            }
+        } else if (content == "+/-") {
+            let number = Int(someDataStructure[someDataStructure.count - 1])
+            someDataStructure.popLast()
+            let modifiedNumber = number! * -1
+            let numberStr = String(modifiedNumber)
+            updateSomeDataStructure(numberStr)
+            updateResultLabel(numberStr)
+        } else if (content == "C") {
+            someDataStructure.removeAll()
+            updateResultLabel("0")
+        } else if (someDataStructure.count == 0) {
+            someDataStructure.append(content)
+            updateResultLabel(content)
+            print(someDataStructure)
+        }else if (someDataStructure[someDataStructure.count-1] == "."){
+            if (resultLabel.text!.characters.count == 7) {
+                return
+            }
+            let element = someDataStructure[someDataStructure.count - 1]
+            if (someDataStructure.count >= 2) {
+                let element2  = someDataStructure[someDataStructure.count - 2]
+                someDataStructure.popLast()
+                print(someDataStructure)
+                someDataStructure.popLast()
+                print(someDataStructure)
+                if (someDataStructure.count == 0) {
+                    someDataStructure.append(element2 + element + content)
+                    updateResultLabel(someDataStructure[0])
+                    print(someDataStructure)
+                } else {
+                    if (Int(someDataStructure[someDataStructure.count - 1]) == nil && Float(someDataStructure[someDataStructure.count - 1]) == nil) {
+                        someDataStructure.append(element2 + element + content)
+                        updateResultLabel(someDataStructure[someDataStructure.count - 1])
+                        print(someDataStructure)
+                    }
+                    someDataStructure[someDataStructure.count - 1] = element2 + element + content
+                    updateResultLabel(someDataStructure[someDataStructure.count - 1])
+                    print(someDataStructure)
+                }
+            } else {
+                someDataStructure[someDataStructure.count - 1] = element + content
+                updateResultLabel(someDataStructure[someDataStructure.count - 1])
+                print(someDataStructure)
+            }
+        } else if (Int(someDataStructure[someDataStructure.count-1]) == nil && Int(content) == nil && Float(someDataStructure[someDataStructure.count - 1]) == nil) {
+            someDataStructure.popLast()
+            someDataStructure.append(content)
+        } else if (someDataStructure.count == 3 && Int(someDataStructure[0]) != nil &&
+            Int(someDataStructure[1]) == nil && Int(someDataStructure[2]) != nil && Int(content) == nil) {
+            if (someDataStructure[1] == "/" && Int(someDataStructure[0])! % Int(someDataStructure[2])! != 0) {
+                let value = doubleCalculate(a: someDataStructure[0], b: someDataStructure[2], operation: "/")
+                updateResultLabel(String(value))
+                someDataStructure.removeAll()
+                someDataStructure.append(String(value))
+                someDataStructure.append(content)
+            } else {
+                if (Int(someDataStructure[0]) == nil || Int(someDataStructure[2]) == nil ) {
+                    let value = doubleCalculate(a: someDataStructure[0], b: someDataStructure[2], operation: someDataStructure[1])
+                    updateResultLabel(String(value))
+                    someDataStructure.removeAll()
+                    someDataStructure.append(String(value))
+                    someDataStructure.append(content)
+                } else {
+                    let value = calculate()
+                    updateResultLabel(value)
+                    someDataStructure.removeAll()
+                    someDataStructure.append(value)
+                    someDataStructure.append(content)
+                }
+            }
+        } else if (Int(someDataStructure[someDataStructure.count - 1]) != nil && Int(content) != nil) {
+            if (resultLabel.text!.characters.count == 7) {
+                return
+            }
+            let element = someDataStructure[someDataStructure.count - 1]
+            someDataStructure[someDataStructure.count - 1] = element + content
+            updateResultLabel(someDataStructure[someDataStructure.count - 1])
+            print(someDataStructure)
+        } else if (Float(someDataStructure[someDataStructure.count - 1]) != nil && Int(content) != nil) {
+            if (resultLabel.text!.characters.count == 7) {
+                return
+            }
+            let element = someDataStructure[someDataStructure.count - 1]
+            someDataStructure[someDataStructure.count - 1] = element + content
+            updateResultLabel(someDataStructure[someDataStructure.count - 1])
+            print(someDataStructure)
+        } else {
+            someDataStructure.append(content)
+            updateResultLabel(content)
+            print(someDataStructure)
+        }
     }
     
     // TODO: Ensure that resultLabel gets updated.
     //       Modify this one or create your own.
     func updateResultLabel(_ content: String) {
-        print("Update me like one of those PCs")
+        resultLabel.text = content
     }
     
     
     // TODO: A calculate method with no parameters, scary!
     //       Modify this one or create your own.
     func calculate() -> String {
-        return "0"
+        let x = Int(someDataStructure[0])
+        let y = Int(someDataStructure[2])
+        let op = someDataStructure[1]
+        return String(intCalculate(a: x!, b: y!, operation: op))
     }
     
     // TODO: A simple calculate method for integers.
     //       Modify this one or create your own.
     func intCalculate(a: Int, b:Int, operation: String) -> Int {
-        print("Calculation requested for \(a) \(operation) \(b)")
-        return 0
+        if (operation == "+") {
+            return a + b
+        } else if (operation == "-") {
+            return a - b
+        } else if (operation == "/") {
+            return a/b
+        } else {
+            return a * b
+        }
     }
     
     // TODO: A general calculate method for doubles
     //       Modify this one or create your own.
-    func calculate(a: String, b:String, operation: String) -> Double {
-        print("Calculation requested for \(a) \(operation) \(b)")
-        return 0.0
+    func doubleCalculate(a: String, b:String, operation: String) -> Double {
+        if (operation == "/") {
+            return Double(a)! / Double(b)!
+        } else if (operation == "-") {
+            return Double(a)! - Double(b)!
+        } else if (operation == "*") {
+            return Double(a)! * Double(b)!
+        } else {
+            return Double(a)! + Double(b)!
+        }
     }
     
     // REQUIRED: The responder to a number button being pressed.
     func numberPressed(_ sender: CustomButton) {
         guard Int(sender.content) != nil else { return }
-        print("The number \(sender.content) was pressed")
-        // Fill me in!
+        //print("The number \(sender.content) was pressed")
+        updateSomeDataStructure(sender.content)
     }
     
     // REQUIRED: The responder to an operator button being pressed.
     func operatorPressed(_ sender: CustomButton) {
-        // Fill me in!
+        updateSomeDataStructure(sender.content)
     }
     
     // REQUIRED: The responder to a number or operator button being pressed.
     func buttonPressed(_ sender: CustomButton) {
        // Fill me in!
+        updateSomeDataStructure(sender.content)
     }
     
     // IMPORTANT: Do NOT change any of the code below.

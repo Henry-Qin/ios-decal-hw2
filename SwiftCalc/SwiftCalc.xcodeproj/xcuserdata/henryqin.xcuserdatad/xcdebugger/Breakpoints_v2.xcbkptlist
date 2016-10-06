@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCalc/ViewController.swift"
+            timestampString = "497221397.721087"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "ViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCalc.ViewController.someDataStructure.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "SwiftCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henryqin/ios-decal-hw2/SwiftCalc/SwiftCalc/ViewController.swift"
+                  timestampString = "497221403.557861"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "35">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCalc.ViewController.someDataStructure.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "SwiftCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henryqin/ios-decal-hw2/SwiftCalc/SwiftCalc/ViewController.swift"
+                  timestampString = "497221403.583314"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCalc.ViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; SwiftCalc.ViewController"
+                  moduleName = "SwiftCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henryqin/ios-decal-hw2/SwiftCalc/SwiftCalc/ViewController.swift"
+                  timestampString = "497221403.586322"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "206">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCalc.ViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;SwiftCalc.ViewController&gt;"
+                  moduleName = "SwiftCalc"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henryqin/ios-decal-hw2/SwiftCalc/SwiftCalc/ViewController.swift"
+                  timestampString = "497221403.589446"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "138">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCalc/ViewController.swift"
+            timestampString = "497380435.366552"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "139"
+            endingLineNumber = "139"
+            landmarkName = "updateSomeDataStructure(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCalc/ViewController.swift"
+            timestampString = "497380435.366552"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "updateSomeDataStructure(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftCalcUITests/AdvancedCalcUITests.swift"
+            timestampString = "497338108.912281"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCalcUITests.AdvancedCalcUITests.__deallocating_deinit"
+                  moduleName = "SwiftCalcUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henryqin/ios-decal-hw2/SwiftCalc/SwiftCalcUITests/AdvancedCalcUITests.swift"
+                  timestampString = "497338568.547285"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCalcUITests.AdvancedCalcUITests.init (invocation : Swift.Optional&lt;__ObjC.NSInvocation&gt;) -&gt; SwiftCalcUITests.AdvancedCalcUITests"
+                  moduleName = "SwiftCalcUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henryqin/ios-decal-hw2/SwiftCalc/SwiftCalcUITests/AdvancedCalcUITests.swift"
+                  timestampString = "497338568.550308"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "50">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCalcUITests.AdvancedCalcUITests.__allocating_init (invocation : Swift.Optional&lt;__ObjC.NSInvocation&gt;) -&gt; SwiftCalcUITests.AdvancedCalcUITests"
+                  moduleName = "SwiftCalcUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henryqin/ios-decal-hw2/SwiftCalc/SwiftCalcUITests/AdvancedCalcUITests.swift"
+                  timestampString = "497338568.553489"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCalcUITests.AdvancedCalcUITests.init (selector : ObjectiveC.Selector) -&gt; SwiftCalcUITests.AdvancedCalcUITests"
+                  moduleName = "SwiftCalcUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henryqin/ios-decal-hw2/SwiftCalc/SwiftCalcUITests/AdvancedCalcUITests.swift"
+                  timestampString = "497338568.556835"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "25">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCalcUITests.AdvancedCalcUITests.__allocating_init (selector : ObjectiveC.Selector) -&gt; SwiftCalcUITests.AdvancedCalcUITests"
+                  moduleName = "SwiftCalcUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henryqin/ios-decal-hw2/SwiftCalc/SwiftCalcUITests/AdvancedCalcUITests.swift"
+                  timestampString = "497338568.560623"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCalcUITests.AdvancedCalcUITests.init () -&gt; SwiftCalcUITests.AdvancedCalcUITests"
+                  moduleName = "SwiftCalcUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henryqin/ios-decal-hw2/SwiftCalc/SwiftCalcUITests/AdvancedCalcUITests.swift"
+                  timestampString = "497338568.564348"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "21">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftCalcUITests.AdvancedCalcUITests.__allocating_init () -&gt; SwiftCalcUITests.AdvancedCalcUITests"
+                  moduleName = "SwiftCalcUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/henryqin/ios-decal-hw2/SwiftCalc/SwiftCalcUITests/AdvancedCalcUITests.swift"
+                  timestampString = "497338568.568184"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
